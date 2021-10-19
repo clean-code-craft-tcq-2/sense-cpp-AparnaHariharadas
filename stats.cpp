@@ -1,6 +1,6 @@
 #include "stats.h"
 #include <numeric>
-Stats Statistics::ComputeStatistics(const std::vector<___>& elementlist) {
+Stats Statistics::ComputeStatistics(const std::vector<___>& ) {
     //Implement statistics here
     //const std::vector<__>& elementlist;
     float sum = std::accumulate(elementlist.begin(),elementlist.end(),0.0);
