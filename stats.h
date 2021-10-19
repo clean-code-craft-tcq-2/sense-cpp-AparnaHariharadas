@@ -1,5 +1,5 @@
 #include <vector>
-#define Stats float
+//#define Stats float
 namespace Statistics {
     Stats ComputeStatistics(const std::vector<___>& );
 }
