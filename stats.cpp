@@ -1,5 +1,5 @@
 #include "stats.h"
-
+#include <numeric>
 Stats Statistics::ComputeStatistics(const std::vector<___>& elementlist) {
     //Implement statistics here
     //const std::vector<__>& elementlist;
