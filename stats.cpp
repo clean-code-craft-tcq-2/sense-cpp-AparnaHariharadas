@@ -1,15 +1,11 @@
 #include "stats.h"
 
-Stats Statistics::ComputeStatistics(const std::vector<___>& ) {
+Stats Statistics::ComputeStatistics(const std::vector<___>& elementlist) {
     //Implement statistics here
-    const std::vector<__>& inputlist;
-    average = ComputeStatistics.average(inputlist);
-    max = ComputeStatistics.max(inputlist);
-    min = ComputeStatistics.min(inputlist);
+    //const std::vector<__>& elementlist;
+    float sum = std::accumulate(elementlist.begin(),elementlist.end(),0.0);
+    float average = sum/elementlist.size();
+    //max = ComputeStatistics.max(inputlist);
+   // min = ComputeStatistics.min(inputlist);
 }
 
-float ComputeStatistics.average(std::vector<___>& elementlist)
-{
-    sum = std::accumulate(elementlist.begin(),elementlist.end(),0.0);
-    avg = sum/elementlist.size();
-}
