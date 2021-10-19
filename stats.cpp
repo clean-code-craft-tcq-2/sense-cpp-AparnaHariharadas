@@ -1,7 +1,7 @@
 #include "stats.h"
 #include <numeric>
 #include <math.h>
-float Statistics::ComputeStatistics(const std::vector<___>& elementlist) {
+float Statistics::ComputeStatistics(const std::vector<float>& elementlist) {
     //Implement statistics here
     //const std::vector<__>& elementlist;
     //isnan(elemnetlist)
