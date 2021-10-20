@@ -2,7 +2,7 @@
 //#define Stats float
 namespace Statistics {
    float ComputeStatistics(const std::vector<float>& elementlist);
-   float average;
+   float average1;
    class ComputeStatistics
 {
 public:
