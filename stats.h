@@ -1,13 +1,13 @@
 #include <vector>
 //#define Stats float
 namespace Statistics {
-   float ComputeStatistics(const std::vector<float>& elementlist);
+   float ComputeStatistics(const std::vector<double>& elementlist);
    class ComputeStatistics
 {
 public:
-   float average;
-   float max;
-   float min;
+   double average;
+   double max;
+   double min;
 };
 
 }
