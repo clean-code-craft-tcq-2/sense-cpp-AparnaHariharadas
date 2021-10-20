@@ -5,7 +5,7 @@ namespace Statistics {
    class ComputeStatistics
 {
 public:
-   float average();
+   float average1();
    float max;
    float min;
 }computedStats;
