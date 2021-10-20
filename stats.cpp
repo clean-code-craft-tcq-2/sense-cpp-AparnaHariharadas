@@ -8,11 +8,11 @@ float Statistics::ComputeStatistics(const std::vector<float>& elementlist) {
     //const std::vector<__>& elementlist;
     //isnan(elemnetlist)
     float sum = std::accumulate(elementlist.begin(),elementlist.end(),0.0);
-    average1 = (float)sum/elementlist.size();
+    ComputeStatistics::average1 = (float)sum/elementlist.size();
     std::cout << average1<<std::endl;
    // average = roundoff(average,3);
     //max = ComputeStatistics.max(inputlist);
    // min = ComputeStatistics.min(inputlist);
-    return average1;
+    return ComputeStatistics::average1;
 }
 
