@@ -6,8 +6,9 @@ float Statistics::ComputeStatistics(const std::vector<float>& elementlist) {
     //const std::vector<__>& elementlist;
     //isnan(elemnetlist)
     float sum = std::accumulate(elementlist.begin(),elementlist.end(),0.0);
-    ComputeStatistics ComputeStat;
-    ComputeStat.average = sum/elementlist.size();
+    average = sum/elementlist.size();
+    std::cout << average,%f<<std::endl
+   // average = roundoff(average,3);
     //max = ComputeStatistics.max(inputlist);
    // min = ComputeStatistics.min(inputlist);
     return average;
