@@ -30,13 +30,14 @@ void checkAndAlert(const vector<float>& elementlist)
 {
     EmailAlert emailAlert;
     LEDAlert ledAlert;
-    std::vector<bool> alerters = {&emailAlert, &ledAlert};
+    //std::vector<bool> alerters = {&emailAlert, &ledAlert};
     auto max = (float)*max_element(begin(elementlist),end(elementlist));
     float maxThreshold = StatsAlerter.maxThreshold;
     if (max > maxThreshold) {
         EmailAlert email;
         LEDAlert led;
         email.emailSent = true;
+        led.ledGlows = true;
     }
 }
-        led.ledGlows = true;
+        
