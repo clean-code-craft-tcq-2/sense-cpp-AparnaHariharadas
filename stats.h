@@ -4,8 +4,8 @@ namespace Statistics {
 {
 public:
    float average1;
-   auto max;
-   auto min;
+   float max;
+   float min;
 };
    Statistics::Stats ComputeStatistics(const std::vector<float>& elementlist);
    //float average1;
