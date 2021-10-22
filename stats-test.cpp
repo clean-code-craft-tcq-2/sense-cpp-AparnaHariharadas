@@ -4,7 +4,7 @@
 #include "stats.h"
 #include <math.h>
 #include <cmath>
-#include<iostream.h>
+#include<iostream>
 using namespace std;
 
 TEST_CASE("reports average, minimum and maximum") {
