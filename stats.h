@@ -27,7 +27,7 @@ class StatsAlerter {
    float maxThreshold;
    EmailAlert email;
    LEDAlert led;
-   void checkAndAlert(const vector<float>& elementlist);
+   void checkAndAlert(const std::vector<float>& elementlist);
    
 };
 
