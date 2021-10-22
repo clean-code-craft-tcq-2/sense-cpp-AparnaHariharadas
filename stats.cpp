@@ -20,8 +20,8 @@ Statistics::Stats Statistics::ComputeStatistics(const vector<float>& elementlist
     else
     {
         computedStats.average = sqrt(-1);
-        computedStats.average = sqrt(-1);
-        computedStats.average = sqrt(-1);
+        computedStats.min = sqrt(-1);
+        computedStats.max = sqrt(-1);
     }
     return computedStats;
 }
