@@ -35,7 +35,7 @@ class StatsAlerter {
    
    EmailAlert email;
    LEDAlert led;
-   void checkAndAlert(const std::vector<float>& elementlist);
+   int checkAndAlert(const std::vector<float>& elementlist);
 };
 
 
