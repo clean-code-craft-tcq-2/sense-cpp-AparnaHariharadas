@@ -11,8 +11,8 @@ float Statistics::ComputeStatistics(const std::vector<float>& elementlist) {
     computedStats.average1 = (float)sum/elementlist.size();
     std::cout << average1<<std::endl;
    // average = roundoff(average,3);
-    //max = ComputeStatistics.max(inputlist);
-   // min = ComputeStatistics.min(inputlist);
-    return computedStats.average1;
+    computedStats.max = ComputeStatistics.max(inputlist);
+    computedStats.min = ComputeStatistics.min(inputlist);
+    return computedStats;
 }
 
