@@ -7,11 +7,10 @@ Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& elemen
     //Implement statistics here
     //isnan(elemnetlist)
     Statistics::Stats computedStats;
-    length_list = elementlist.size();
-    sorted_list[length_list]={0};
+    int length_list = elementlist.size();
     float sum = std::accumulate(elementlist.begin(),elementlist.end(),0.0);
-    float max = *max_element(elementlist.begin(),elementlist.end());
-    float min = *min_element(elementlist.begin(),elementlist.end());
+    float max = std::*max_element(elementlist.begin(),elementlist.end());
+    float min = std::*min_element(elementlist.begin(),elementlist.end());
     computedStats.average1 = (float)sum/length_list;
     computedStats.max = max;
     computedStats.min = min;
