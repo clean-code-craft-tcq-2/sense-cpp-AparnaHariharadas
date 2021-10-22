@@ -9,11 +9,11 @@ Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& elemen
     Statistics::Stats computedStats;
     int length_list = elementlist.size();
     float sum = std::accumulate(elementlist.begin(),elementlist.end(),0.0);
-    auto max = std::max_element(std::begin(elementlist),std::end(elementlist));
-    auto min = std::min_element(elementlist.begin(),elementlist.end());
+   // auto max = std::max_element(std::begin(elementlist),std::end(elementlist));
+   // auto min = std::min_element(elementlist.begin(),elementlist.end());
     computedStats.average1 = (float)sum/length_list;
-    computedStats.max = (float)max;
-    computedStats.min = (float)min;
+    computedStats.max = (float)std::max_element(std::begin(elementlist),std::end(elementlist));
+    computedStats.min = (float)std::min_element(elementlist.begin(),elementlist.end());
     return computedStats;
 }
 
