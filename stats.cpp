@@ -33,7 +33,7 @@ int checkAndAlert(const vector<float>& elementlist)
     auto max = (float)*max_element(begin(elementlist),end(elementlist));
     cout << maxThreshold <<endl;
     //std::vector<bool> alerters1 =alerters;
-    float maxThreshold1 =10.4// maxThreshold;
+    float maxThreshold1 =10.4;// maxThreshold;
         int val;
    /* EmailAlert email;
     LEDAlert led;
