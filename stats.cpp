@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <iostream>
 using namespace std;
+extern float maxThreshold;
 Statistics::Stats Statistics::ComputeStatistics(const vector<float>& elementlist) {
     //Implement statistics here
     //isnan(elemnetlist)
@@ -33,6 +34,7 @@ int checkAndAlert(const vector<float>& elementlist)
     cout << maxThreshold <<endl;
     //std::vector<bool> alerters1 =alerters;
     float maxThreshold1 =10.4// maxThreshold;
+        int val;
    /* EmailAlert email;
     LEDAlert led;
     if (max > maxThreshold1) {
@@ -45,7 +47,7 @@ int checkAndAlert(const vector<float>& elementlist)
         led.ledGlows = false;
     }*/
         if (max > maxThreshold1) {
-            int val =0;
+            val =0;
         }
     return val;
 }
