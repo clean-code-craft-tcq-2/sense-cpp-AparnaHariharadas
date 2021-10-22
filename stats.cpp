@@ -12,8 +12,8 @@ Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& elemen
     auto max = std::max_element(std::begin(elementlist),std::end(elementlist));
     auto min = std::min_element(elementlist.begin(),elementlist.end());
     computedStats.average1 = (float)sum/length_list;
-    computedStats.max = max;
-    computedStats.min = min;
+    computedStats.max = (float)max;
+    computedStats.min = (float)min;
     return computedStats;
 }
 
