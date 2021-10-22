@@ -3,13 +3,11 @@ namespace Statistics {
    class Stats
 {
 public:
-   float average1;
+   float average;
    float max;
    float min;
 };
    Statistics::Stats ComputeStatistics(const std::vector<float>& elementlist);
-   //float average1;
-   
 
 }
 
