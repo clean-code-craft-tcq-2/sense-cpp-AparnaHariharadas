@@ -9,7 +9,7 @@ Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& elemen
     Statistics::Stats computedStats;
     int length_list = elementlist.size();
     float sum = std::accumulate(elementlist.begin(),elementlist.end(),0.0);
-    float max = std::max_element(elementlist.begin(),elementlist.end());
+    float max = std::max_element(std::begin(elementlist),std::end(elementlist));
     float min = std::min_element(elementlist.begin(),elementlist.end());
     computedStats.average1 = (float)sum/length_list;
     computedStats.max = max;
