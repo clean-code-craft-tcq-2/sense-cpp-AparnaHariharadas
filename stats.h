@@ -7,7 +7,7 @@ public:
    float max;
    float min;
 };
-   Stats ComputeStatistics(const std::vector<float>& elementlist);
+   Statistics::Stats ComputeStatistics(const std::vector<float>& elementlist);
    //float average1;
    
 
