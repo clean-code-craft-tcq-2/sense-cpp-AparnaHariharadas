@@ -29,11 +29,11 @@ Statistics::Stats Statistics::ComputeStatistics(const vector<float>& elementlist
 void checkAndAlert(const vector<float>& elementlist)
 {
     auto max = (float)*max_element(begin(elementlist),end(elementlist));
-    std::vector<bool> alerters =alerters;
-    float maxThreshold = maxThreshold;
+    std::vector<bool> alerters1 =alerters;
+    float maxThreshold1 = maxThreshold;
     EmailAlert email;
     LEDAlert led;
-    if (max > maxThreshold) {
+    if (max > maxThreshold1) {
         
         email.emailSent = true;
         led.ledGlows = true;
