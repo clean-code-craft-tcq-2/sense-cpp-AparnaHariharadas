@@ -31,11 +31,16 @@ void checkAndAlert(const vector<float>& elementlist)
     auto max = (float)*max_element(begin(elementlist),end(elementlist));
     //StatsAlerter statsAlerter(maxThreshold,alerters);
     float maxThreshold = 10.4;//statsAlerter.maxThreshold;
+    EmailAlert email;
+    LEDAlert led;
     if (max > maxThreshold) {
-        EmailAlert email;
-        LEDAlert led;
+        
         *email.emailSent = true;
         *led.ledGlows = true;
+    }
+    else{
+        *email.emailSent = false;
+        *led.ledGlows = false;
     }
 }
         
