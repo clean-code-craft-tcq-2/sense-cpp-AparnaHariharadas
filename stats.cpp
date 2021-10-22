@@ -10,7 +10,7 @@ Statistics::Stats Statistics::ComputeStatistics(const vector<float>& elementlist
     int length_list = elementlist.size();
     float sum = accumulate(elementlist.begin(),elementlist.end(),0.0);
     bool NAN_check = elementlist.empty();
-    float NAN = sqrt(-1);
+    //const double NAN = sqrt(-1);
     if(!NAN_check)
     {
     computedStats.average = (float)sum/length_list;
@@ -19,9 +19,9 @@ Statistics::Stats Statistics::ComputeStatistics(const vector<float>& elementlist
     }
     else
     {
-        computedStats.average = NAN;
-        computedStats.average = NAN;
-        computedStats.average = NAN;
+        computedStats.average = sqrt(-1);
+        computedStats.average = sqrt(-1);
+        computedStats.average = sqrt(-1);
     }
     return computedStats;
 }
