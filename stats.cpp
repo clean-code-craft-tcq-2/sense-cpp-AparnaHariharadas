@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <iostream>
 using namespace std;
-extern float maxThreshold;
+extern float StatsAlerter::maxThreshold;
 Statistics::Stats Statistics::ComputeStatistics(const vector<float>& elementlist) {
     //Implement statistics here
     //isnan(elemnetlist)
@@ -31,7 +31,7 @@ Statistics::Stats Statistics::ComputeStatistics(const vector<float>& elementlist
 int checkAndAlert(const vector<float>& elementlist)
 {
     auto max = (float)*max_element(begin(elementlist),end(elementlist));
-    cout << maxThreshold <<endl;
+    cout << StatsAlerter::maxThreshold <<endl;
     //std::vector<bool> alerters1 =alerters;
     float maxThreshold1 =10.4;// maxThreshold;
         int val;
