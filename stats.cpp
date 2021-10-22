@@ -3,11 +3,11 @@
 #include <math.h>
 #include <iostream>
 extern float average1;
-Statistics::ComputeStatistics Statistics::ComputeStatistics(const std::vector<float>& elementlist) {
+Stats Statistics::ComputeStatistics(const std::vector<float>& elementlist) {
     //Implement statistics here
     //const std::vector<__>& elementlist;
     //isnan(elemnetlist)
-    Statistics::ComputeStatistics computedStats;
+    Statistics::Stats computedStats;
     float sum = std::accumulate(elementlist.begin(),elementlist.end(),0.0);
     computedStats.average1 = (float)sum/elementlist.size();
     std::cout << average1<<std::endl;
