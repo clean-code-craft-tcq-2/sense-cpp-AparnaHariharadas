@@ -13,13 +13,13 @@ public:
 
 class EmailAlert {
   public:
-   bool emailSent;
+   bool *emailSent;
    
 };
 
 class LEDAlert {
    public:
-   bool ledGlows;
+   bool *ledGlows;
    
 };
 class StatsAlerter {
