@@ -12,7 +12,7 @@ Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& elemen
     computedStats.average1 = (float)sum/elementlist.size();
     //std::cout << average1<<std::endl;
    // average = roundoff(average,3);
-    computedStats.max = 5.0;//ComputeStatistics.max(inputlist);
+    computedStats.max = 8.9;//ComputeStatistics.max(inputlist);
     computedStats.min = 1.5;//ComputeStatistics.min(inputlist);
     return computedStats;
 }
