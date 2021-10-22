@@ -31,7 +31,7 @@ Statistics::Stats Statistics::ComputeStatistics(const vector<float>& elementlist
 int checkAndAlert(const vector<float>& elementlist)
 {
     auto max = (float)*max_element(begin(elementlist),end(elementlist));
-    cout << StatsAlerter::maxThreshold <<endl;
+    cout << maxThreshold <<endl;
     //std::vector<bool> alerters1 =alerters;
     float maxThreshold1 =10.4;// maxThreshold;
         int val;
