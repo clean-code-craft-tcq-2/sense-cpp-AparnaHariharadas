@@ -23,8 +23,15 @@ class LEDAlert {
    
 };
 class StatsAlerter {
-   public:
+   private:
    float maxThreshold;
+   std::vector<bool> alerters;
+   public:
+   StatsAlerter(float maxThreshold1,std::vector<bool> alerters1)
+   {
+      maxThreshold = maxThreshold1;
+      std::vector<bool> alerters = std::vector<bool> alerters1;
+   }
    EmailAlert email;
    LEDAlert led;
    void checkAndAlert(const std::vector<float>& elementlist);
