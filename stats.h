@@ -13,13 +13,13 @@ public:
 
 class EmailAlert {
   public:
-   bool *emailSent;
+   bool emailSent;
    
 };
 
 class LEDAlert {
    public:
-   bool *ledGlows;
+   bool ledGlows;
    
 };
 class StatsAlerter {
@@ -32,6 +32,7 @@ class StatsAlerter {
       maxThreshold = maxThreshold1;
       alerters = alerters1;
    }
+   
    EmailAlert email;
    LEDAlert led;
    void checkAndAlert(const std::vector<float>& elementlist);
