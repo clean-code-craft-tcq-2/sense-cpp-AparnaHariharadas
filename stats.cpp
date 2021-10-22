@@ -26,3 +26,15 @@ Statistics::Stats Statistics::ComputeStatistics(const vector<float>& elementlist
     return computedStats;
 }
 
+void checkAndAlert(const vector<float>& elementlist)
+{
+    std::vector<IAlerter*> alerters = {&emailAlert, &ledAlert};
+    auto max = (float)*max_element(begin(elementlist),end(elementlist));
+    float maxThreshold = statsAlerter.maxThreshold;
+    if (max > maxThreshold) {
+        EmailAlert email;
+        LEDAlert led;
+        email.emailSent = true;
+    }
+}
+        led.ledGlows = true;
