@@ -24,7 +24,7 @@ class LEDAlert {
 };
 class StatsAlerter {
    public:
-   constexpr static float maxThreshold{};
+   float maxThreshold{};
    std::vector<bool> alerters;
    public:
    StatsAlerter(float maxThreshold1)//,std::vector<bool> alerters1)
