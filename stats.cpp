@@ -1,7 +1,7 @@
 #include "stats.h"
 #include <numeric>
 #include <math.h>
-#include <iostream>
+#include <algorithm>
 //extern float average1;
 Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& elementlist) {
     //Implement statistics here
