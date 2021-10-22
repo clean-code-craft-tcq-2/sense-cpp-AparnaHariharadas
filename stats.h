@@ -8,7 +8,7 @@ public:
    float average1;
    float max;
    float min;
-}computedStats;
+};
 
 }
 
