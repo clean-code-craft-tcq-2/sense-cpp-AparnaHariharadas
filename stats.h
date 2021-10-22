@@ -10,12 +10,15 @@ public:
    Statistics::Stats ComputeStatistics(const std::vector<float>& elementlist);
 
 }
+
 class EmailAlert {
-  bool emailSent;
+  public:
+   bool emailSent;
    
 };
 
 class LEDAlert {
+   public:
    bool ledGlows;
    
 };
@@ -24,7 +27,7 @@ class StatsAlerter {
    float maxThreshold;
    EmailAlert email;
    LEDAlert led;
-   void checkAndAlert(const std::vector<<IAlerter*>& alerters);
+   void checkAndAlert(const vector<float>& elementlist);
    
 };
 
