@@ -3,7 +3,7 @@
 #include <math.h>
 #include <iostream>
 extern float average1;
-float Statistics::ComputeStatistics(const std::vector<float>& elementlist) {
+ComputeStatistics Statistics::ComputeStatistics(const std::vector<float>& elementlist) {
     //Implement statistics here
     //const std::vector<__>& elementlist;
     //isnan(elemnetlist)
