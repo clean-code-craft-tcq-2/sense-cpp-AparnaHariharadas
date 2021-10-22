@@ -29,7 +29,7 @@ Statistics::Stats Statistics::ComputeStatistics(const vector<float>& elementlist
 void checkAndAlert(const vector<float>& elementlist)
 {
     auto max = (float)*max_element(begin(elementlist),end(elementlist));
-    std::vector<bool> alerters1 alerters =alerters;
+    std::vector<bool> alerters =alerters;
     float maxThreshold = maxThreshold;
     EmailAlert email;
     LEDAlert led;
