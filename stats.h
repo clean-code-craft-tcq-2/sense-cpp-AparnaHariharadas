@@ -37,7 +37,7 @@ class StatsAlerter {
    LEDAlert led;
    StatsAlerter checkAndAlert(const std::vector<float>& elementlist);
    
-};
+}SAlert;
 
 
     
