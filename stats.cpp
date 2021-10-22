@@ -35,12 +35,12 @@ void checkAndAlert(const vector<float>& elementlist)
     LEDAlert led;
     if (max > maxThreshold) {
         
-        *email.emailSent = true;
-        *led.ledGlows = true;
+        email.emailSent = true;
+        led.ledGlows = true;
     }
     else{
-        *email.emailSent = false;
-        *led.ledGlows = false;
+        email.emailSent = false;
+        led.ledGlows = false;
     }
 }
         
