@@ -24,10 +24,10 @@ class LEDAlert {
 };
 class StatsAlerter {
    public:
-   static float maxThreshold;
+   static float maxThreshold{};
    std::vector<bool> alerters;
    public:
-   StatsAlerter(static float maxThreshold1)//,std::vector<bool> alerters1)
+   StatsAlerter(float maxThreshold1)//,std::vector<bool> alerters1)
    {
       maxThreshold = maxThreshold1;
      // alerters = alerters1;
