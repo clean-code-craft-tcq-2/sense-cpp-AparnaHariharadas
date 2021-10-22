@@ -2,18 +2,19 @@
 #include <numeric>
 #include <math.h>
 #include <iostream>
-extern float average1;
+//extern float average1;
 Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& elementlist) {
     //Implement statistics here
-    //const std::vector<__>& elementlist;
     //isnan(elemnetlist)
     Statistics::Stats computedStats;
+    length_list = elementlist.size();
+    sorted_list[length_list]={0};
     float sum = std::accumulate(elementlist.begin(),elementlist.end(),0.0);
-    computedStats.average1 = (float)sum/elementlist.size();
-    //std::cout << average1<<std::endl;
-   // average = roundoff(average,3);
-    computedStats.max = 8.9;//ComputeStatistics.max(inputlist);
-    computedStats.min = 1.5;//ComputeStatistics.min(inputlist);
+    float max = *max_element(elementlist.begin(),elementlist.end());
+    float min = *min_element(elementlist.begin(),elementlist.end());
+    computedStats.average1 = (float)sum/length_list;
+    computedStats.max = max;
+    computedStats.min = min;
     return computedStats;
 }
 
