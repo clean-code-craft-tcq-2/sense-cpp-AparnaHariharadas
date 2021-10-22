@@ -2,6 +2,7 @@
 #include <numeric>
 #include <math.h>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 Statistics::Stats Statistics::ComputeStatistics(const vector<float>& elementlist) {
     //Implement statistics here
@@ -44,8 +45,9 @@ int checkAndAlert(const vector<float>& elementlist)
         led.ledGlows = false;
     }*/
         if (max > maxThreshold1) {
-            return 0;
+            int val =0;
         }
+    return val;
 }
         
   
