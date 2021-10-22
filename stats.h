@@ -27,7 +27,7 @@ class StatsAlerter {
    static float maxThreshold;
    std::vector<bool> alerters;
    public:
-   StatsAlerter(float maxThreshold1)//,std::vector<bool> alerters1)
+   StatsAlerter(static float maxThreshold1)//,std::vector<bool> alerters1)
    {
       maxThreshold = maxThreshold1;
      // alerters = alerters1;
