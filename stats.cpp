@@ -30,10 +30,10 @@ StatsAlerter checkAndAlert(const vector<float>& elementlist)
 {
     auto max = (float)*max_element(begin(elementlist),end(elementlist));
     //StatsAlerter statsAlerter(maxThreshold,alerters);
-    StatsAlerter::StatsAlerter statsAlerter;
+    StatsAlerter statsAlerter;
     //float maxThreshold = 10.4;//statsAlerter.maxThreshold;
-    alerters = statsAlerter::alerters;
-    maxThreshold = StatsAlerter.maxThreshold;
+    alerters = statsAlerter.alerters;
+    maxThreshold = statsAlerter.maxThreshold;
     EmailAlert email;
     LEDAlert led;
     if (max > maxThreshold) {
