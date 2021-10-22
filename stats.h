@@ -1,7 +1,5 @@
 #include <vector>
 namespace Statistics {
-   float ComputeStatistics(const std::vector<float>& elementlist);
-   //float average1;
    class ComputeStatistics
 {
 public:
@@ -9,6 +7,9 @@ public:
    float max;
    float min;
 };
+   float ComputeStatistics(const std::vector<float>& elementlist);
+   //float average1;
+   
 
 }
 
