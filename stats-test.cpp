@@ -27,14 +27,13 @@ TEST_CASE("average is NaN for empty array") {
 }
 
 TEST_CASE("raises alerts when max is greater than threshold") {
-    /*EmailAlert emailAlert;
+    EmailAlert emailAlert;
     LEDAlert ledAlert;
-    std::vector<bool> alerters = {&emailAlert, &ledAlert};*/
-    
+    std::vector<bool> alerters = {&emailAlert, &ledAlert};
     const float maxThreshold = 10.2;
-    StatsAlerter statsAlerter(maxThreshold);//, alerters);
-    int val = statsAlerter.checkAndAlert({99.8, 34.2, 4.5, 6.7});
-
-    REQUIRE(val == 0);
-    //REQUIRE(ledAlert.ledGlows);
+    StatsAlerter statsAlerter(maxThreshold),alerters);
+    statsAlerter.checkAndAlert({99.8, 34.2, 4.5, 6.7});
+    REQUIRE(ledAlert.ledGlows);
+    REQUIRE(emailAlert.emailSent);
+    
 }
