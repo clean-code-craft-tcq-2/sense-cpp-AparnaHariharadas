@@ -1,4 +1,9 @@
 #include <vector>
+#include <math.h>
+#include <algorithm>
+#include <iostream>
+#include <numeric>
+using namespace std;
 namespace Statistics {
    class Stats
 {
