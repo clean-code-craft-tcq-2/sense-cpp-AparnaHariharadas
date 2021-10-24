@@ -2,6 +2,7 @@
 #include <math.h>
 #include <algorithm>
 #include <numeric>
+#include <iostream>
 
 using namespace std;
 
@@ -55,7 +56,10 @@ class StatsAlerter {
           led.ledGlows = false;
       }
    }
-
+   cout <<email.emailSent<<endl;
+   cout <<led.ledGlows<<endl;
+   cout <<StatsAlerter::maxThreshold<<endl;
+   cout <<max<<endl;
 };
 
 
