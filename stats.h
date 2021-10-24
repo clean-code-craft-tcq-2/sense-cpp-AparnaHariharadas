@@ -54,6 +54,7 @@ class StatsAlerter {
           email.emailSent = false;
           led.ledGlows = false;
       }
+   }
 
 };
 
