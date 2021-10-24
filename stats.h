@@ -43,8 +43,6 @@ class StatsAlerter {
    void checkAndAlert(const std::vector<float>& elementlist){
       auto max = (float)*max_element(begin(elementlist),end(elementlist));
       std::vector<bool> alerter = StatsAlerter::alerters;
-      EmailAlert email;
-      LEDAlert led;
       if (max > StatsAlerter::maxThreshold) {
         
           email.emailSent = true;
