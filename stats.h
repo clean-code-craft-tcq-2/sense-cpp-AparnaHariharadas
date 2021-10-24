@@ -55,10 +55,7 @@ class StatsAlerter {
           email.emailSent = false;
           led.ledGlows = false;
       }
-      cout<<email.emailSent<<endl;
-      cout<<led.ledGlows<<endl;
-      cout<<StatsAlerter::maxThreshold<<endl;
-      cout<<max<<endl;
+      
    }
    
 };
