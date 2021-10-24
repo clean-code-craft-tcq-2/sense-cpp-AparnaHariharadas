@@ -32,23 +32,20 @@ class StatsAlerter {
    float maxThreshold;
    std::vector<bool> alerters;
    public:
-   StatsAlerter(float maxThreshold1)//,std::vector<bool> alerters1)
+   StatsAlerter(float maxThreshold1,std::vector<bool> alerters1)
    {
       maxThreshold = maxThreshold1;
-     // alerters = alerters1;
+      alerters = alerters1;
    }
    
    EmailAlert email;
    LEDAlert led;
-   int checkAndAlert(const std::vector<float>& elementlist){
+   void checkAndAlert(const std::vector<float>& elementlist){
       auto max = (float)*max_element(begin(elementlist),end(elementlist));
-      cout << StatsAlerter::maxThreshold <<endl;
-      //std::vector<bool> alerters1 =alerters;
-      float maxThreshold1 =10.4;// maxThreshold;
-       int val;
-     /* EmailAlert email;
+      std::vector<bool> alerter = StatsAlerter::alerters;
+      EmailAlert email;
       LEDAlert led;
-      if (max > maxThreshold1) {
+      if (max > StatsAlerter::maxThreshold) {
         
           email.emailSent = true;
           led.ledGlows = true;
@@ -56,12 +53,8 @@ class StatsAlerter {
       else{
           email.emailSent = false;
           led.ledGlows = false;
-      }*/
-          if (max > maxThreshold1) {
-              val =0;
-          }
-      return val;
-   }
+      }
+
 };
 
 
