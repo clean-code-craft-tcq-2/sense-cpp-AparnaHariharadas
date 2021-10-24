@@ -1,9 +1,6 @@
 #include "stats.h"
-#include <numeric>
-#include <math.h>
-#include <algorithm>
-#include <iostream>
-using namespace std;
+
+
 //extern float StatsAlerter::maxThreshold;
 Statistics::Stats Statistics::ComputeStatistics(const vector<float>& elementlist) {
     //Implement statistics here
