@@ -18,13 +18,13 @@ public:
 
 class EmailAlert {
   public:
-   bool* emailSent;
+   bool emailSent;
    
 };
 
 class LEDAlert {
    public:
-   bool* ledGlows;
+   bool ledGlows;
    
 };
 class StatsAlerter {
@@ -45,12 +45,12 @@ class StatsAlerter {
       std::vector<bool*> alerter = StatsAlerter::alerters;
       if (max > StatsAlerter::maxThreshold) {
         
-          *email.emailSent = true;
-          *led.ledGlows = true;
+          email.emailSent = true;
+          led.ledGlows = true;
       }
       else{
-          *email.emailSent = false;
-          *led.ledGlows = false;
+          email.emailSent = false;
+          led.ledGlows = false;
       }
    }
 
